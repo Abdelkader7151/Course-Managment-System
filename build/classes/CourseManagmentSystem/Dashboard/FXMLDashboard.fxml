@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="288.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CourseManagmentSystem.Dashboard.FXMLDashboardController">
+   <children>
+      <HBox spacing="10" />
+      <AnchorPane prefHeight="288.0" prefWidth="254.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="viewCoursesButton" layoutX="26.0" layoutY="242.0" onAction="#handleViewCourses" text="View Courses" textFill="#f00d0d" />
+            <Button fx:id="viewProfileButton" layoutX="155.0" layoutY="241.0" onAction="#handleProfile" text="Profile" textFill="#e21212" />
+            <ImageView fitHeight="173.0" fitWidth="255.0" layoutY="58.0">
+               <image>
+                  <Image url="@images/download.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutY="-2.0" prefHeight="62.0" prefWidth="255.0" style="-fx-background-color: grey;" />
+            <Label layoutX="71.0" layoutY="9.0" style="-fx-font-size: 24px;" text="Dashboard" textFill="#2d2c2c" underline="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="254.0" prefHeight="288.0" prefWidth="209.0" style="-fx-background-color: black;">
+         <children>
+            <TextArea layoutX="31.0" layoutY="25.0" prefHeight="200.0" prefWidth="4.0" style="-fx-background-color: red;" />
+            <TextArea layoutX="81.0" layoutY="82.0" prefHeight="142.0" prefWidth="41.0" style="-fx-background-color: red;" />
+            <TextArea layoutX="130.0" layoutY="121.0" prefHeight="103.0" prefWidth="41.0" style="-fx-background-color: red;" />
+            <Text fill="#e60707" layoutX="33.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English" />
+            <Text fill="#da0707" layoutX="83.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="French" />
+            <Text fill="#c40404" layoutX="132.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arabic" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

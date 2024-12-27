@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CourseManagmentSystem.Course2Details.FXMLCourse2DetailsController">
+   <children>
+      <Label fx:id="courseNameLabel" layoutX="10.0" layoutY="10.0" />
+      <Label fx:id="courseDescriptionLabel" layoutX="10.0" layoutY="40.0" />
+      <ImageView fitHeight="495.0" fitWidth="587.0" layoutX="-4.0" layoutY="6.0">
+         <image>
+            <Image url="@images/th.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="66.0" prefWidth="587.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="206.0" layoutY="12.0" style="-fx-font-size: 24px;" text="Course Details" textFill="#393636" underline="true" />
+            <ImageView fitHeight="54.0" fitWidth="63.0" layoutX="516.0" layoutY="7.0">
+               <image>
+                  <Image url="@images/th%20(1).jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="315.0" text="Course Name:" textFill="#bb0d0d" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="77.0" text="Description:" textFill="#bb0d0d" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="41.0" layoutY="448.0" onAction="#handleBack" text="Back" textFill="#e40c0c" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="10.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English language, a West Germanic language of the Indo-European language family that is closely related to the Frisian, German, and Dutch languages. It originated in England and is the dominant language of the U.S., the U.K., Canada, Australia, Ireland, and New Zealand." wrappingWidth="238.99999856948853" />
+      <ImageView fitHeight="261.0" fitWidth="265.0" layoutX="318.0" layoutY="246.0">
+         <image>
+            <Image url="@images/tr.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

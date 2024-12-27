@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="498.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CourseManagmentSystem.Course1Details.FXMLCourse1DetailsController">
+       <children>
+           <Label fx:id="courseNameLabel" />
+           <Label fx:id="courseDescriptionLabel" />
+          <ImageView fitHeight="495.0" fitWidth="576.0" layoutY="2.0">
+             <image>
+                <Image url="@images/th.jpg" />
+             </image>
+          </ImageView>
+          <AnchorPane prefHeight="58.0" prefWidth="576.0" style="-fx-background-color: white;">
+             <children>
+                 <Label layoutX="206.0" layoutY="12.0" style="-fx-font-size: 24px;" text="Course Details" textFill="#393636" underline="true" />
+                <ImageView fitHeight="50.0" fitWidth="70.0" layoutX="505.0" layoutY="7.0">
+                   <image>
+                      <Image url="@images/th%20(1).jpg" />
+                   </image>
+                </ImageView>
+             </children>
+          </AnchorPane>
+           <Label layoutX="4.0" layoutY="305.0" text="Course Name:" textFill="#bb0d0d" underline="true">
+             <font>
+                <Font name="System Bold Italic" size="24.0" />
+             </font>
+          </Label>
+           <Label layoutX="4.0" layoutY="67.0" text="Description:" textFill="#bb0d0d" underline="true">
+             <font>
+                <Font name="System Bold Italic" size="24.0" />
+             </font>
+          </Label>
+           <Button fx:id="viewBackButton" layoutX="31.0" layoutY="438.0" onAction="#handleBack" text="Back" textFill="#e40c0c" />
+          <ImageView fitHeight="208.0" fitWidth="338.0" layoutX="246.0" layoutY="291.0">
+             <image>
+                <Image url="@images/th%20(2).jpg" />
+             </image>
+          </ImageView>
+          <Text fill="WHITE" layoutX="14.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arabic">
+             <font>
+                <Font size="20.0" />
+             </font>
+          </Text>
+          <Text fill="WHITE" layoutX="10.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arabic is the official language of the 22 countries that form the Arab League. There are more than 300 million Arabic speakers across the world, though they predominantly live in the region stretching across the Middle East and North Africa. It is also one of the six official languages of the United Nations (UN)." wrappingWidth="248.99999856948853" />
+       </children>
+    </AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CourseManagmentSystem.Course3Details.FXMLCourse3DetailsController">
+   <children>
+      <Label fx:id="courseNameLabel" layoutX="20.0" layoutY="20.0" />
+      <Label fx:id="courseDescriptionLabel" layoutX="20.0" layoutY="20.0" />
+      <ImageView fitHeight="505.0" fitWidth="600.0" layoutX="-7.0" layoutY="6.0">
+         <image>
+            <Image url="@images/th.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="1.0" prefHeight="73.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="206.0" layoutY="12.0" style="-fx-font-size: 24px;" text="Course Details" textFill="#393636" underline="true" />
+            <ImageView fitHeight="54.0" fitWidth="63.0" layoutX="530.0" layoutY="14.0">
+               <image>
+                  <Image url="@images/th%20(1).jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="24.0" layoutY="325.0" text="Course Name:" textFill="#bb0d0d" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="87.0" text="Description:" textFill="#bb0d0d" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="51.0" layoutY="458.0" onAction="#handleBack" text="Back" textFill="#e40c0c" />
+      <Text fill="WHITE" layoutX="24.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="French">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="20.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="French (français,, or,, or by some speakers,) is a Romance language of the Indo-European family. It descended from the Vulgar Latin of the Roman Empire, as did all Romance languages. French evolved from Gallo-Romance, the Latin spoken in Gaul, and more specifically in Northern" wrappingWidth="238.99999856948853" />
+      <ImageView fitHeight="260.0" fitWidth="272.0" layoutX="325.0" layoutY="248.0">
+         <image>
+            <Image url="@images/paris.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
