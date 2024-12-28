@@ -13,13 +13,13 @@ import java.io.IOException;
 public class FXMLDashboardController {
 
     @FXML
-    private Button viewCoursesButton;
+    protected Button viewCoursesButton;
 
     @FXML
-    private Button viewProfileButton;
+    protected Button viewProfileButton;
 
     @FXML
-    private void handleViewCourses() {
+    protected void handleViewCourses() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/CourseManagmentSystem/CourseList/FXMLCourseList.fxml"));
             GridPane courseListRoot = loader.load(); // Cast to GridPane
@@ -35,7 +35,7 @@ public class FXMLDashboardController {
     }
 
     @FXML
-    private void handleProfile() {
+    protected void handleProfile() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/CourseManagmentSystem/Profile/FXMLProfile.fxml"));
             AnchorPane profileRoot = loader.load();
@@ -50,7 +50,7 @@ public class FXMLDashboardController {
         }
     }
 
-    private void showAlert(String message) {
+    protected void showAlert(String message) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Error");
         alert.setHeaderText(null);
