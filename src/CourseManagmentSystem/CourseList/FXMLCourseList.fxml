@@ -14,7 +14,7 @@
     </padding>
     <VBox spacing="10" style="-fx-background-color: grey;" GridPane.columnIndex="0" GridPane.rowIndex="0">
         <ListView fx:id="courseListView" prefHeight="200" prefWidth="300" style="-fx-background-color: red;" />
-        <Button onAction="#handleViewDetails" text="View Details" textFill="#a21616" />
+        <Button fx:id="viewDetailsButton" onAction="#handleViewDetails" text="View Details" textFill="#a21616" />
     </VBox>
    <columnConstraints>
       <ColumnConstraints />

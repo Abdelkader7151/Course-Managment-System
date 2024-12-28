@@ -2,8 +2,10 @@ package CourseManagmentSystem.CourseList;
 
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -22,6 +24,15 @@ public class CourseListScreen extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    public void showNoSelectionAlert() {
+        Platform.runLater(() -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("No Selection");
+            alert.setHeaderText("No Course Selected");
+            alert.setContentText("Please select a course to view details.");
+            alert.showAndWait();
+        });
     }
 
     public static void main(String[] args) {
