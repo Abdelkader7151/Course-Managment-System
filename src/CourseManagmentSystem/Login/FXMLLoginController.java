@@ -15,13 +15,13 @@ import java.sql.SQLException;
 public class FXMLLoginController {
 
     @FXML
-    private TextField usernameField;
+    protected TextField usernameField;
 
     @FXML
-    private PasswordField passwordField;
+    protected PasswordField passwordField;
 
     @FXML
-    private void handleLogin() {
+     void handleLogin() {
         String username = usernameField.getText();
         String password = passwordField.getText();
 
@@ -47,7 +47,7 @@ public class FXMLLoginController {
     }
 
     @FXML
-    private void handleCancel() {
+    void handleCancel() {
         usernameField.clear();
         passwordField.clear();
     }
