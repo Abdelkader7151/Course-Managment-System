@@ -18,12 +18,12 @@
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font></Label>
-                   <Label layoutX="1.0" layoutY="174.0" text="Arsani112@gmail.com" textFill="#cc0d0d" />
+                   <Label layoutX="1.0" layoutY="174.0" text="Abdelkader7151.com" textFill="#cc0d0d" />
                    <Label layoutX="1.0" layoutY="80.0" text="Username:">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font></Label>
-                   <Label layoutX="1.0" layoutY="115.0" text="Arsani Wagdi" textFill="#cc0d0d" />
+                   <Label layoutX="1.0" layoutY="115.0" text="Abdelrhman Abdelkader" textFill="#cc0d0d" />
                    <Label layoutX="128.0" layoutY="14.0" prefHeight="35.0" prefWidth="91.0" style="-fx-font-size: 24px;" textFill="#282828" underline="true">
                      <graphic>
                          <Label fx:id="usernameLabel" />

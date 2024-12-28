@@ -1,28 +1,24 @@
 package CourseManagmentSystem.Profile;
 
-import javafx.fxml.Initializable;
-import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import java.net.URL;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.Initializable;
 
 public class FXMLProfileController implements Initializable {
 
     @FXML
-    private Label usernameLabel;
+    protected Label usernameLabel;
 
     @FXML
-    private void handleLogout() {
+    protected void handleLogout() {
         navigateToDashboard();
     }
 
@@ -31,8 +27,8 @@ public class FXMLProfileController implements Initializable {
         // Simulating setting the profile details
         usernameLabel.setText("Profile");
     }
-    
-        private void navigateToDashboard() {
+
+    private void navigateToDashboard() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/CourseManagmentSystem/Dashboard/FXMLDashboard.fxml"));
             Parent dashboardRoot = loader.load();
